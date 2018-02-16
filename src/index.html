@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Close button</title>
+    <style>
+        .dialog{
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(209, 209, 209, 0.8);
+        }
+
+        .dialog::backdrop {
+            background-color: rgba(209, 209, 209, 1);
+        }
+    </style>
 </head>
 <body>
-<h1>Тест</h1>
+<dialog class="dialog">
+    <button class="close">Close me!</button>
+</dialog>
+<button class="show">Click me!</button>
 </body>
 </html>
